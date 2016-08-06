@@ -1,0 +1,57 @@
+// #WRAPPER
+
+$creepy-wrapper-width:          1200px !default;
+$creepy-wrapper-width-narrow:   960px !default;
+$creepy-wrapper-width-wide:     1400px !default;
+
+$creepy-wrapper-padding:        $creepy-base-spacing-unit !default;
+
+$creepy-enable-wrapper--narrow: false !default;
+$creepy-enable-wrapper--wide:   false !default;
+$creepy-enable-wrapper--flush:  false !default;
+
+
+
+
+
+.o-wrapper {
+	max-width: $creepy-wrapper-width;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: $creepy-wrapper-padding;
+	padding-left: $creepy-wrapper-padding;
+
+
+
+
+
+	// Narrow wrapper.
+	@if ($creepy-enable-wrapper--narrow == true) {
+		&--narrow {
+			max-width: $creepy-enable-wrapper--narrow;
+		}
+	}
+
+
+
+
+
+	// Wide wrapper.
+	@if ($creepy-enable-wrapper--wide == true) {
+		&--wide {
+			max-width: $creepy-wrapper-width-wide;
+		}
+	}
+
+
+
+
+	
+	// Flush wrapper with no padding.
+	@if ($creepy-enable-wrapper--flush == true) {
+		&--flush {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+}
