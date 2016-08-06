@@ -2,9 +2,10 @@
   "name": "creepycss-wrapper",
   "homepage": "https://github.com/creepy-teepee/creepycss-wrapper",
   "authors": [
-    "James Howard <james@reetgood.co.uk>"
+    "James Howard <james@reetgood.co.uk>",
+    "Jon Hurrell"
   ],
-  "description": "The wrapper objects constrains the width of content.",
+  "description": "The wrapper object constrains the width of content.",
   "main": "_objects.wrapper.scss",
   "keywords": [
     "oocss",
