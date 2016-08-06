@@ -2,7 +2,16 @@
 
 The wrapper object constrains the width of content.
 
-```HTML
+## Installation
+
+    bower install --save creepycss-wrapper
+
+## Usage
+
+```
+@import 'bower_components/creepycss-wrapper/objects.wrapper';
+```
+
 <div class="o-wrapper">
 	…
 </div>
